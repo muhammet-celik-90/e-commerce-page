@@ -64,6 +64,7 @@ export default function Basket() {
         basket.map((product, index) => (
           <Card
             sx={{ display: "flex", flexDirection: "row", marginBottom: "10px" }}
+            key={index}
           >
             <CardMedia
               image={product.image}
