@@ -15,11 +15,15 @@ import { getSessionProductIndex } from "@/app/libs/getSessionProduct";
 import Link from "next/link";
 
 export default function Basket() {
-  let sepet = JSON.parse(sessionStorage.getItem("basket"));
+  let sepet = [];
+
+  if(sessionStorage.getItem("basket")) {
+    sepet = JSON.parse(sessionStorage.getItem("basket"));
+  }
 
   const [basket, setBasket] = useState(sepet);
 
-  console.log(sepet);
+  //console.log(sepet);
 
   const handleDecrease = (dId) => {
     let currentSession = JSON.parse(sessionStorage.getItem("basket"));
