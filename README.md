@@ -1,9 +1,9 @@
 ## Image
-
+![image](https://github.com/muhammet-celik-90/e-commerce-page/assets/111661381/c95ecf22-d0fa-4654-9397-5ecdf46b253c)
 
 ## E-Commerce-Page
 
-- Ürünleri Fake Store API[https://fakestoreapi.com/docs]'den çektim.
+- Ürünleri Fake Store API[https://fakestoreapi.com/docs] 'den çektim.
 - Hem fiyata göre hemde kategoriye göre filtreleme özelliği getirdim.
 - Sepete ekleme özelliği getirdim.
 - Filtreleme bilgilerini saklamak için redux/toolkit[https://redux-toolkit.js.org/] kullandım.. Sepet bilgilerini ise session'da sakladım.
