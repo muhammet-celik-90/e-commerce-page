@@ -5,7 +5,11 @@ import LocalMallOutlinedIcon from "@mui/icons-material/LocalMallOutlined";
 import { useEffect, useState } from "react";
 
 export default function SearchBar() {
-  let sepet = JSON.parse(sessionStorage.getItem("basket"));
+  let sepet = [];
+
+  if(sessionStorage.getItem("basket")) {
+    sepet = JSON.parse(sessionStorage.getItem("basket"));
+  }
 
   return (
     <Box
