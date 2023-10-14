@@ -17,8 +17,11 @@ import Link from "next/link";
 export default function Basket() {
   let sepet = [];
 
-  if(sessionStorage.getItem("basket")) {
+  if (typeof window !== "undefined" && window.sessionStorage) {
+    // sessionStorage kullanabilirsiniz
     sepet = JSON.parse(sessionStorage.getItem("basket"));
+  } else {
+    // Tarayıcı dışı ortamda çalışıyorsunuz, sessionStorage kullanılamaz
   }
 
   const [basket, setBasket] = useState(sepet);
